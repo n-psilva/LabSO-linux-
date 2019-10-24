@@ -1,0 +1,27 @@
+if test -f $1
+then
+    if test -d $1
+    then
+      echo "$1 é um diretorio"     
+     else
+     rm $1
+     echo "$1 removido"
+     fi
+else
+echo "$1 removido"
+fi
+
+# usando colchetes
+
+if [ -f $1 ]
+then
+   if [ -d $1 ]
+     then
+     echo "$1 é um diretorio"
+   else
+     rm $1
+     echo "$1 removido"
+   fi
+else
+ echo "$1 não existe"
+fi
